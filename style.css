@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 /* ===== Базові стилі ===== */
 * {
   box-sizing: border-box;
@@ -7,16 +8,15 @@
 }
 
 html, body {
-  height: 100%;          /* Висота сторінки 100% */
-  font-family: Arial, sans-serif;
+  height: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 body {
   display: flex;
-  flex-direction: column; /* Вертикальний Flex-контейнер */
-  min-height: 100vh;      /* Мінімальна висота = висота екрану */
-  background: #9b0086c4;
-  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
 }
 
 /* ===== NAVBAR ===== */
@@ -43,6 +43,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
+  width: fit-content;
 }
 
 .header_navbar .list_link:hover,
@@ -52,23 +53,51 @@ body {
 }
 
 /* ===== HEADER CONTENT ===== */
-.header_content {
+.header_content_summer {
   min-height: 40vh;
   padding: 120px 20px;
-  background: url('image/purpure smoke.jpg') center/cover no-repeat;
-
+  background: url('image/pexels-helen1-12151930.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.header_content_spring {
+  min-height: 40vh;
+  padding: 120px 20px;
+  background: url('image/pexels-grizzlybear-421759.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_content_autumn {
+  min-height: 40vh;
+  padding: 120px 20px;
+  background: url('image/pexels-thatguycraig000-1563356.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_content_winter {
+  min-height: 40vh;
+  padding: 120px 20px;
+  background: url('image/pexels-kostunrix-1003124.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /* Заголовок */
 .info__title1 {
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff;
+  color: #c400aa;
   margin-bottom: 20px;
 }
 
@@ -80,38 +109,43 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-register,
-.btn-learn {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
+/* Кнопка 1 */
 .btn-register {
+  padding: 12px 24px;
   background-color: #0082f3;
   color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
 }
 
 .btn-register:hover {
   background-color: #005bb5;
 }
 
+/* Кнопка 2 */
 .btn-learn {
-  background-color: #f0f0f0;
-  color: #333;
+  display: inline-block;
+  padding: 12px 28px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  transition: 0.3s;
 }
 
 .btn-learn:hover {
-  background-color: #d9d9d9;
+  background-color: #ffffff;
+  color: #0082f3;
 }
-
-
 /* ===== MAIN CONTENT ===== */
 main {
-  background-color: #444444; /* Ваш колір */
+  background-color: #444444;
   color: white;
   padding: 20px;
   flex: 1;
@@ -124,10 +158,11 @@ main {
   background: linear-gradient(135deg, #4a00e0, #8e2de2);
   color: #fff;
   display: flex;
-  flex-direction: column;       /* Всі елементи по вертикалі */
-  align-items: center;          /* Центруємо контент по горизонталі */
-  gap: 40px;                    /* Відстань між блоками */
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
+
 .news__title {
   font-size: 32px;
   margin-bottom: 40px;
@@ -174,10 +209,9 @@ main {
 .ic__title2 {
   font-size: 22px;
   letter-spacing: 2px;
-  color: #0063c0;;
+  color: #0063c0;
   text-transform: uppercase;
 }
-
 
 .ic__subtitle {
   color: #f5f5f5;
@@ -194,39 +228,57 @@ main {
   flex-wrap: wrap;
 }
 
+/* ===== CARD ===== */
 .card {
   width: 300px;
-  height: 291px;
-  padding: 30px 20px;
-  border: 1px solid #9a00a8;
-  border-radius: 5px;
-  text-align: center;
-  transition: all 0.3s ease;
+  min-height: 360px;
+  border-radius: 10px;
+  overflow: hidden;
   background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card__img {
-  width: 60px;
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
   margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card__content {
+  text-align: center;
+  width: 100%;
 }
 
 .card__title {
   font-size: 16px;
+  font-weight: 600;
   letter-spacing: 2px;
-  margin-bottom: 15px;
-  color: #555;
   text-transform: uppercase;
+  color: #007bff;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .card__description {
   font-size: 14px;
-  line-height: 1.6;
-  color: #777;
+  line-height: 1.4;
+  color: #fff;
+  background: #007bff;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 3px;
 }
 
 .cta-button {
@@ -243,7 +295,7 @@ main {
   height: auto;
 }
 
-.wrapper__footer{
+.wrapper__footer {
   background-color: #111;
   color: #fff;
   text-align: center;
@@ -251,71 +303,108 @@ main {
   margin-top: 40px;
 }
 
-/* ===== CARD ===== */
-.card {
-  width: 300px;
-  /* Висоту краще не ставити фіксованою, або зробити більшою */
-  min-height: 360px; 
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  /* Центруємо весь контент всередині */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px; /* додаємо відступ від країв картки */
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Фото в картці */
-.card__img {
-  width: 100%; /* розтягуємо на всю ширину контейнера */
-  max-width: 250px;
-  height: 180px; /* фіксована висота для фото */
-  object-fit: cover; /* щоб фото не розплющувало */
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-/* Контейнер для тексту */
-.card__content {
-  text-align: center; /* Центруємо текст всередині */
-  width: 100%;
-}
-
-/* Заголовок */
-.card__title {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #007bff; /* синій колір як на скріні */
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-/* Опис */
-.card__description {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #fff;
-  background: #007bff; /* синій фон як на скріні */
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 3px;
-}
-
 /* ===== FOOTER ===== */
 footer {
-  background: #363636;
-  color: white;
-  text-align: center;
-  padding: 15px;
+  margin-top: auto;
   width: 100%;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #ffffff;
+  padding: 20px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ===== Layout ===== */
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+/* ===== Elements ===== */
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* ===== Links ===== */
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2;
+}
+
+/* ===== Form ===== */
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form i {
+  font-size: 18px;
+}
+
+form input {
+  flex: 1;
+  background: none;
+  color: #ccc;
+  border: none;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+form button i {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
 }
