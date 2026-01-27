@@ -3,61 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Головна</title>
-  <meta name="description" content="Autumn themed website about beauty and nature">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Про нас</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome для іконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header id="header">
   <nav class="header_navbar">
-    <a href="index.html" class="list_link">Головна</a>
-    <a href="about.html" class="list_link">Про нас</a>
-    <a href="contact.html" class="list_link">Контакти</a><i class="fa-brands fa-telegram"></i>
+    <a href="index.html" class="list_link">Весна</a>
+    <a href="about.html" class="list_link">Літо</a>
+    <a href="contact.html" class="list_link">Осінь</a>
+    <a href="winter.html" class="list_link active_page">Зима</a>
   </nav>
 
-  <section class="header_content">
+  <section class="header_content_summer">
     <div class="header__info1">
-      <h1 class="info__title1">Autumn of her beauty</h1>
+      <h1 class="info__title1">Весна початок життя</h1>
+  
       <div class="info__buttons">
-        <a href="#" class="btn-register">Autumn is school</a>
-        <a href="#" class="btn-learn">Learn more</a>
+        <a href="#" class="btn-register">
+          Весняні свята
+        </a>
+  
+        <a href="https://znaki.fm/uk/events/vesnyani-svyata-v-ukrayini/"
+          class="btn-learn"
+          target="_blank"
+          rel="noopener">
+          Дізнатись більше
+        </a>
       </div>
     </div>
   </section>
-</header>
 
 <main class="wrapper__main">
   <section class="main__info">
-      <div class="info__container">
-          <h2 class="ic__title">тут буде заголовок чогось</h2>
-          <p class="ic__subtitle">
-              тут будуть поради тощо
-          </p>
+    <div class="info__container">
+      <h2 class="ic__title1"> звичаї</h2>
+      <p class="ic__subtitle">
+        Весняні звичаї в Україні
+      </p>
 
-          <!-- Картки -->
-          <div class="cards-container">
-              <!-- 1 -->
-            <article class="card">
-                  <img src="image/pexels-snapwire-6992.jpg" alt="Спорт" class="card__img">
-                  <h3 class="card__title">Заголовок</h3>
-                  <p class="card__description">birbavfkjahfviafklafbliaflgu</p>
-              </article>
-
-              <article class="card">
-                  <img src="image/pexels-zhangkaiyv-1083515.jpg" alt="Спорт" class="card__img">
-                  <h3 class="card__title">Заголовокfvvfy</h3>
-                  <p class="card__description">birbavfkjahfviafklafbliaflgu</p>
-              </article>
-            </article>
+      <!-- Картки -->
+      <div class="cards-container">
+        <!-- Картка 1 -->
+        <article class="card">
+          <img src="image/Yavdoha Zuyiha.jpg" alt="Спорт" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">Явдохи</h3>
+            <p class="card__description">Це ймення означало буквально «життєславна» і звучало як Явдоня. Асоціюється це ім'я з покровительством земної природи і знаменує пробудження життєвої сили землі.</p>
           </div>
+        </article>
+
+        <!-- Картка 2 -->
+        <article class="card">
+          <img src="image/Palm Sunday.jpg" alt="Спорт" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">Вербна неділя</h3>
+            <p class="card__description">одне з найважливіших свят у християнському календарі, остання неділя перед Великоднем. Воно присвячене біблійній історії, яка розповідає про в'їзд Ісуса Христа в священне місто Єрусалим.</p>
+          </div>
+        </article>
+        
+        <article class="card">
+          <img src="image/Easter.webp" alt="Свято" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">Великдень</h3>
+            <p class="card__description">Великдень – це не лише релігійне свято, але й важлива частина української культури. Це час, коли родини збираються разом, щоб розділити радість Воскресіння Христового, скуштувати традиційні страви та вшанувати давні звичаї.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="image/Trinity.webp" alt="Спорт" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">Трійця</h3>
+            <p class="card__description">Трійця – одне із більшості християнських свят, яке відзначають на 50-й день після Великодня. Воно символізує зішестя Святого Духа на апостолів і підтверджено днем ​​народження церкви. Водночас у народній традиції це свято переплелося з давніми язичницькими обрядами, зокрема вшануванням природи, зелені та води. Саме тому Трійцю в Україні називають ще й Зеленими святами. У цей день оселі прикрашають гілками дерев і духмяними травами, виконують обряди, повнені магічного змісту, та збираються за родинним столом. </p>
+          </div>
+        </article>
+        
+        <article class="card">
+          <img src="image/FortyMartyrsofSebaste.JPG" alt="Спорт" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">40 святих мучеників
+                                    Севастійських.</h3>
+            <p class="card__description"> 40 воїнів римського XII легіону (Legio XII Fulminata), які загинули у 320 році біля міста Севастія (грец. Σεβάστεια) нині турецьке місто Сівас (тур. Sivas) за відмову зректись християнської віри. Пам'ять вшановується у православній і католицькій церкві, а також у давньосхідних та ряді протестантських церквах. Їм моляться жінки за швидке повернення своїх чоловіків після тривалої розлуки. </p>
+          </div>
+        </article>
+
       </div>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>© 2026 Команда, яка створювала сайт</p>
+  <div class="row">
+    <div class="col">
+      <img src="image/logo.png" alt="Виконавці" class="Виконавці">
+      <p>
+      Роман Пісний,
+      Саша Бондаренко,
+      Софія Шпак.
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>Office</h3>
+      <p>ITPL Road</p>
+      <p>Whitefield, Bangalore</p>
+      <p>Вул. Лейпцизька Київ</p>
+      <p class="email-id">r04172776@gmail.com</p>
+      <h4>Phone</h4>
+      <p>+380 97 188 42 98</p>
+    </div>
+
+    <div class="col">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h3>Newsletter</h3>
+      <form>
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Your email id" required>
+        <button type="submit">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
 </footer>
 
 </body>

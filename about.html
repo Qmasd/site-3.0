@@ -3,64 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Про нас</title>
+  <title>Літо</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome для хрестика -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header id="header">
   <nav class="header_navbar">
-    <a href="index.html" class="list_link">Головна</a>
-    <a href="about.html" class="list_link">Про нас</a>
-    <a href="contact.html" class="list_link">Контакти</a>
+    <a href="index.html" class="list_link">Весна</a>
+    <a href="about.html" class="list_link active_page">Літо</a>
+    <a href="contact.html" class="list_link">Осінь</a>
+    <a href="winter.html" class="list_link">Зима</a>
   </nav>
-</header>
 
-<section class="header_content">
-  <div class="header__info1">
-    <h1 class="info__title1">Autumn of her beauty</h1>
-    <div class="info__buttons">
-      <a href="#" class="btn-register">Autumn is school</a>
-      <a href="#" class="btn-learn">Learn more</a>
+  <section class="header_content_spring">
+    <div class="header__info1">
+      <h1 class="info__title1">Літня краса природи</h1>
+      <div class="info__buttons">
+        <a href="#" class="btn-register">Літні канікули</a>
+        <a href="https://znaki.fm/uk/events/litni-svyata/" class="btn-learn">Дізнатись більше</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </header>
 
 <main class="wrapper__main">
   <section class="main__info">
-      <div class="info__container">
-          <h2 class="ic__title">тут буде заголовок чогось</h2>
-          <p class="ic__subtitle">
-              тут будуть поради тощо
-          </p>
+    <div class="info__container">
+      <h2 class="ic__title1">Літній сезон</h2>
+      <p class="ic__subtitle">Сонячні миті та святкові дні</p>
 
-          <!-- Картки -->
-          <div class="cards-container">
-              <!-- 1 -->
-              <article class="card">
-                  <img src="image/pexels-snapwire-6992.jpg" alt="Спорт" class="card__img">
-                  <h3 class="card__title">Заголовок</h3>
-                  <p class="card__description">birbavfkjahfviafklafbliaflgu</p>
-              </article>
+      <!-- Картки -->
+      <div class="cards-container">
 
-              <article class="card">
-                  <img src="image/pexels-zhangkaiyv-1083515.jpg" alt="Спорт" class="card__img">
-                  <h3 class="card__title">Заголовокfvvfy</h3>
-                  <p class="card__description">birbavfkjahfviafklafbliaflgu</p>
-              </article>
-
-
-              
-              </article>
+        <!-- Картка 1 -->
+        <article class="card">
+          <span class="close-card">&times;</span>
+          <img src="image/LightForMemories.jpg" alt="Літо" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">День скорботи та пам’яті жертв війни</h3>
+            <p class="card__description">
+              22 червня в Україні відзначають День скорботи та вшанування пам’яті жертв війни. Люди відвідують пам’ятники, покладають квіти та присвячують хвилину мовчання загиблим. Це нагадування про історію, єдність народу і важливість пам’ятати уроки минулого.
+            </p>
           </div>
+        </article>
+
+        <!-- Картка 2 -->
+        <article class="card">
+          <span class="close-card">&times;</span>
+          <img src="image/Dnem_molodi.jpg" alt="Літо" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">День молоді</h3>
+            <p class="card__description">
+              В останню неділю червня Україна відзначає День молоді. Свято енергії, активності та творчості молодого покоління. У цей день проходять концерти, фестивалі та спортивні заходи. День молоді — чудова нагода зустрітися з друзями та насолодитися літом.
+            </p>
+          </div>
+        </article>
+
+        <!-- Картка 3 -->
+        <article class="card">
+          <span class="close-card">&times;</span>
+          <img src="image/Ivan_Kupala.jpg" alt="Літо" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">Іван Купала</h3>
+            <p class="card__description">
+              Іван Купала — стародавнє слов’янське свято, що поєднує язичницькі традиції з християнським святом Івана Хрестителя. В ніч на 6–7 липня люди стрибають через вогнища, пускають вінки по воді та купаються в річках для здоров’я, щастя і кохання. Легенда говорить про «квітку папороті», яка розцвітає лише цієї ночі й приносить удачу.
+            </p>
+          </div>
+        </article>
+
+        <!-- Картка 4 -->
+        <article class="card">
+          <span class="close-card">&times;</span>
+          <img src="image/FishingDay.jpg" alt="Літо" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">День рибалки</h3>
+            <p class="card__description">
+              День рибалки — свято людей, які працюють у рибальстві та люблять це хобі. Відзначають другу неділю липня. У цей день вітають рибалок, проводять змагання, ярмарки та майстер-класи, а також проводять час на природі біля водойм.
+            </p>
+          </div>
+        </article>
+
+        <!-- Картка 5 -->
+        <article class="card">
+          <span class="close-card">&times;</span>
+          <img src="image/dan_nezaleshnosti_Ukraini.jpg" alt="Літо" class="card__img">
+          <div class="card__content">
+            <h3 class="card__title">День незалежності України</h3>
+            <p class="card__description">
+              24 серпня Україна відзначає День Незалежності — день свободи, сили та єдності. Навіть у літній атмосфері відпочинку й тепла це нагадування про цінність власної держави та майбутнє, яке ми будуємо разом.
+            </p>
+          </div>
+        </article>
+
       </div>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>© 2026 Команда, яка створювала сайт</p>
+  <div class="row">
+    <div class="col">
+      <img src="image/logo.png" alt="Виконавці" class="Виконавці">
+      <p>
+      Роман Пісний,
+      Саша Бондаренко,
+      Софія Шпак.
+      </p>
+    </div>
+    <div class="col">
+      <h3>Office</h3>
+      <p>ITPL Road</p>
+      <p>Whitefield, Bangalore</p>
+      <p>Вул. Лейпцизька Київ</p>
+      <p class="email-id">r04172776@gmail.com</p>
+      <h4>Phone</h4>
+      <p>+380 97 188 42 98</p>
+    </div>
+    <div class="col">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter</h3>
+      <form>
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Your email id" required>
+        <button type="submit">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
 </footer>
-
+<div class="modal-overlay"></div>
+<script src="script.js"></script>
 </body>
 </html>
